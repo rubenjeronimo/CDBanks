@@ -16,8 +16,6 @@
 		FE5F970A19668CEB005A3DE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F970919668CEB005A3DE4 /* AppDelegate.m */; };
 		FE5F970D19668CEB005A3DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5F970B19668CEB005A3DE4 /* Main.storyboard */; };
 		FE5F971019668CEB005A3DE4 /* CoreDataRayWenderlich.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE5F970E19668CEB005A3DE4 /* CoreDataRayWenderlich.xcdatamodeld */; };
-		FE5F971319668CEB005A3DE4 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F971219668CEB005A3DE4 /* MasterViewController.m */; };
-		FE5F971619668CEB005A3DE4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F971519668CEB005A3DE4 /* DetailViewController.m */; };
 		FE5F971819668CEB005A3DE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5F971719668CEB005A3DE4 /* Images.xcassets */; };
 		FE5F971F19668CEB005A3DE4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5F971E19668CEB005A3DE4 /* XCTest.framework */; };
 		FE5F972019668CEB005A3DE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5F96F719668CEB005A3DE4 /* Foundation.framework */; };
@@ -25,6 +23,9 @@
 		FE5F972219668CEB005A3DE4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5F96FD19668CEB005A3DE4 /* CoreData.framework */; };
 		FE5F972A19668CEB005A3DE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE5F972819668CEB005A3DE4 /* InfoPlist.strings */; };
 		FE5F972C19668CEB005A3DE4 /* CoreDataRayWenderlichTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F972B19668CEB005A3DE4 /* CoreDataRayWenderlichTests.m */; };
+		FE5F973A1966945F005A3DE4 /* MasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F97391966945F005A3DE4 /* MasterTableViewController.m */; };
+		FE5F97401966B1C4005A3DE4 /* FailedBankDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F973F1966B1C4005A3DE4 /* FailedBankDetails.m */; };
+		FE5F97431966B377005A3DE4 /* FailedBankInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FE5F97421966B377005A3DE4 /* FailedBankInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,16 +52,18 @@
 		FE5F970919668CEB005A3DE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FE5F970C19668CEB005A3DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE5F970F19668CEB005A3DE4 /* CoreDataRayWenderlich.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataRayWenderlich.xcdatamodel; sourceTree = "<group>"; };
-		FE5F971119668CEB005A3DE4 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		FE5F971219668CEB005A3DE4 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		FE5F971419668CEB005A3DE4 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		FE5F971519668CEB005A3DE4 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		FE5F971719668CEB005A3DE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FE5F971D19668CEB005A3DE4 /* CoreDataRayWenderlichTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataRayWenderlichTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5F971E19668CEB005A3DE4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FE5F972719668CEB005A3DE4 /* CoreDataRayWenderlichTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataRayWenderlichTests-Info.plist"; sourceTree = "<group>"; };
 		FE5F972919668CEB005A3DE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FE5F972B19668CEB005A3DE4 /* CoreDataRayWenderlichTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataRayWenderlichTests.m; sourceTree = "<group>"; };
+		FE5F97381966945F005A3DE4 /* MasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterTableViewController.h; sourceTree = "<group>"; };
+		FE5F97391966945F005A3DE4 /* MasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterTableViewController.m; sourceTree = "<group>"; };
+		FE5F973E1966B1C4005A3DE4 /* FailedBankDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBankDetails.h; sourceTree = "<group>"; };
+		FE5F973F1966B1C4005A3DE4 /* FailedBankDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBankDetails.m; sourceTree = "<group>"; };
+		FE5F97411966B377005A3DE4 /* FailedBankInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBankInfo.h; sourceTree = "<group>"; };
+		FE5F97421966B377005A3DE4 /* FailedBankInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBankInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,13 +129,15 @@
 				FE5F970819668CEB005A3DE4 /* AppDelegate.h */,
 				FE5F970919668CEB005A3DE4 /* AppDelegate.m */,
 				FE5F970B19668CEB005A3DE4 /* Main.storyboard */,
-				FE5F971119668CEB005A3DE4 /* MasterViewController.h */,
-				FE5F971219668CEB005A3DE4 /* MasterViewController.m */,
-				FE5F971419668CEB005A3DE4 /* DetailViewController.h */,
-				FE5F971519668CEB005A3DE4 /* DetailViewController.m */,
 				FE5F971719668CEB005A3DE4 /* Images.xcassets */,
 				FE5F970E19668CEB005A3DE4 /* CoreDataRayWenderlich.xcdatamodeld */,
+				FE5F97411966B377005A3DE4 /* FailedBankInfo.h */,
+				FE5F97421966B377005A3DE4 /* FailedBankInfo.m */,
+				FE5F973E1966B1C4005A3DE4 /* FailedBankDetails.h */,
+				FE5F973F1966B1C4005A3DE4 /* FailedBankDetails.m */,
 				FE5F970019668CEB005A3DE4 /* Supporting Files */,
+				FE5F97381966945F005A3DE4 /* MasterTableViewController.h */,
+				FE5F97391966945F005A3DE4 /* MasterTableViewController.m */,
 			);
 			path = CoreDataRayWenderlich;
 			sourceTree = "<group>";
@@ -263,10 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE5F971619668CEB005A3DE4 /* DetailViewController.m in Sources */,
-				FE5F971319668CEB005A3DE4 /* MasterViewController.m in Sources */,
 				FE5F970A19668CEB005A3DE4 /* AppDelegate.m in Sources */,
+				FE5F97401966B1C4005A3DE4 /* FailedBankDetails.m in Sources */,
+				FE5F973A1966945F005A3DE4 /* MasterTableViewController.m in Sources */,
 				FE5F970619668CEB005A3DE4 /* main.m in Sources */,
+				FE5F97431966B377005A3DE4 /* FailedBankInfo.m in Sources */,
 				FE5F971019668CEB005A3DE4 /* CoreDataRayWenderlich.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

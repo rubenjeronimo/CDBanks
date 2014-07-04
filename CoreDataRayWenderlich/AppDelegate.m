@@ -7,8 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "MasterTableViewController.h"
+#import "FailedBankDetails.h"
+#import "FailedBankInfo.h"
 
-#import "MasterViewController.h"
 
 @implementation AppDelegate
 
@@ -20,8 +22,40 @@
 {
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
+    MasterTableViewController *controller = (MasterTableViewController *)navigationController.topViewController;
+    controller.contexto = self.managedObjectContext;
+    
+    NSManagedObjectContext *contexto = [self managedObjectContext];
+    FailedBankInfo *failedBankInfo = [NSEntityDescription insertNewObjectForEntityForName:@"FailedBankInfo" inManagedObjectContext:contexto];
+    failedBankInfo.name = @"Test Bank";
+    failedBankInfo.ciudad = @"de los niños perdidos";
+    failedBankInfo.estado = @"de buena esperanza";
+    
+
+    
+    FailedBankDetails *failedBankDetail = [NSEntityDescription insertNewObjectForEntityForName:@"FailedBankDetails" inManagedObjectContext:contexto];
+    failedBankDetail.zip = @1234;
+    failedBankDetail.closeDate = [NSDate date];
+    failedBankDetail.updateDate = [NSDate date];
+    
+    failedBankDetail.info = failedBankInfo;
+    failedBankInfo.details = failedBankDetail;
+  
+    NSError *error;
+    if (![contexto save:&error]) {
+        NSLog(@"kdkdkdkdk: %@", [error localizedDescription]);
+    }
+        NSFetchRequest *consulta = [[NSFetchRequest alloc]init];
+        NSEntityDescription *entidad = [NSEntityDescription entityForName:@"FailedBankInfo" inManagedObjectContext:contexto];
+        [consulta setEntity:entidad];
+        NSArray *objetosConsultados = [contexto executeFetchRequest:consulta error:&error];
+        for (FailedBankInfo *objeto in objetosConsultados) {
+            FailedBankDetails *detalles = [objeto valueForKey:@"details"];
+            NSLog(@"name: %@",[objeto valueForKey:@"name"]);
+            NSLog(@"zip: %@", [detalles valueForKey:@"zip"]);
+        }
+    
+    
     return YES;
 }
 							
